@@ -1,7 +1,7 @@
 import React from "react";
 import { PieChart } from "react-minimal-pie-chart";
 
-export const IncomeExpenses = () => {
+export function IncomeExpenses({ transaction }) {
   return (
     <>
       <PieChart
@@ -23,4 +23,4 @@ export const IncomeExpenses = () => {
       </div>
     </>
   );
-};
+}

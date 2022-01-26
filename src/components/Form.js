@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Form = () => {
+export function Form() {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
 
@@ -9,7 +9,7 @@ export const Form = () => {
       <h3>Add new transaction</h3>
       <form>
         <div className="form-control">
-          <label htmlFor="text">Text</label>
+          <label htmlFor="text">Category</label>
           <input
             type="text"
             value={text}
@@ -20,7 +20,7 @@ export const Form = () => {
         <div className="form-control">
           <label htmlFor="amount">
             Amount <br />
-            (negative - expense, positive - income)
+            {/* {(negative - expense, positive - income)} */}
           </label>
           <input
             type="number"
@@ -33,4 +33,4 @@ export const Form = () => {
       </form>
     </>
   );
-};
+}
