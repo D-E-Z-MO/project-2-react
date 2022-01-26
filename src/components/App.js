@@ -18,9 +18,7 @@ export function App() {
           <Route path="/balance">
             <Balance />
           </Route>
-          <Route path="/incomeExpenses">
-            <IncomeExpenses />
-          </Route>
+
           <Route exact path="/transactionList">
             <TransactionList />
           </Route>

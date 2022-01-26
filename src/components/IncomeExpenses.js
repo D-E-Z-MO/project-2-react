@@ -1,26 +1,15 @@
 import React from "react";
-import { PieChart } from "react-minimal-pie-chart";
 
 export function IncomeExpenses({ transaction }) {
+  const isExpense = transaction.category === "Expense";
   return (
-    <>
-      <PieChart
-        data={[
-          { title: "One", value: 10, color: "#E38627" },
-          { title: "Two", value: 10, color: "#c13c37" },
-          { title: "Three", value: 10, color: "#6A2135" },
-        ]}
-      />
-      <div className="inc-exp-container">
-        <div>
-          <h4>Income</h4>
-          <p className="money plus">+$0.00</p>
-        </div>
-        <div>
-          <h4>Expense</h4>
-          <p className="money minus">-$0.00</p>
-        </div>
-      </div>
-    </>
+    <div>
+      <h4>{isExpense ? "Expense" : "Income"}</h4>
+      <p className={`money ${isExpense ? "minus" : "plus"}`}>
+        ${isExpense ? "-" : "+"} {transaction.amount}
+      </p>
+      <p>Date: {new Date(transaction.date).toLocaleDateString("en-US")}</p>
+      <button className="delete-btn">x</button>
+    </div>
   );
 }

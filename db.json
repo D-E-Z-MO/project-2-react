@@ -1,0 +1,37 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "date": 1643171980775,
+      "category": "Income",
+      "amount": 10
+    },
+    {
+      "id": 2,
+      "date": 1643171980775,
+      "category": "Expense",
+      "amount": 1000
+    },
+    {
+      "category": "Expense",
+      "date": 1643171980775,
+      "amount": 500,
+      "id": 3
+    },
+    {
+      "category": "Income",
+      "amount": 90,
+      "date": 1643171980775,
+      "id": 4
+    },
+    {
+      "category": "Expense",
+      "amount": 450,
+      "date": 1643174442319,
+      "id": 5
+    }
+  ],
+  "balance": {
+    "amount": 100000
+  }
+}

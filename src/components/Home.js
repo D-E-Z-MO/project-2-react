@@ -9,10 +9,6 @@ export function Home() {
   return (
     <div>
       <Header />
-      <Balance />
-      <IncomeExpenses />
-      <TransactionList />
-      <Form />
     </div>
   );
 }

@@ -1,9 +1,18 @@
 import React, { useState } from "react";
-
+import { createTransaction } from "../api";
 export function Form() {
-  const [text, setText] = useState("");
+  const [category, setCategory] = useState("");
   const [amount, setAmount] = useState(0);
-
+  //onsubmit create function to put request to add transaction & change value
+  const onSubmit = () => {
+    const data = {
+      category,
+      amount: Number(amount),
+      date: new Date().getTime(),
+    };
+    createTransaction(data);
+    // update balance
+  };
   return (
     <>
       <h3>Add new transaction</h3>
@@ -12,8 +21,8 @@ export function Form() {
           <label htmlFor="text">Category</label>
           <input
             type="text"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
             placeholder="Enter text..."
           />
         </div>
@@ -29,7 +38,9 @@ export function Form() {
             placeholder="Enter amount..."
           />
         </div>
-        <button className="btn">Add transaction</button>
+        <button onClick={() => onSubmit()} className="btn">
+          Add transaction
+        </button>
       </form>
     </>
   );
