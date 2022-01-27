@@ -13,15 +13,16 @@ export function Form({ balance }) {
     };
     console.log("** First");
     createTransaction(data);
+    let newBalance = null;
     if (data.category === "Expense") {
       const transaction = data.amount * -1;
-      const newBalance = balance + transaction;
-      return updateBalance(newBalance, data.category);
+      newBalance = balance + transaction;
+      // return updateBalance(newBalance, data.category);
     } else {
       const transaction = data.amount;
-      const newBalance = balance + transaction;
-      return updateBalance(newBalance, data.category);
+      newBalance = balance + transaction;
     }
+    return updateBalance(newBalance, data.category);
   };
 
   return (
