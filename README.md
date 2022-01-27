@@ -5,9 +5,7 @@ _{Nav Bar}_
 --Summary (show the pie chart of transactions, list history and current balance)
 --Make Transactions (form to submit new transaction)
 
-# Added Features
+# Future Features
 
 --Pie chart displays the allocaton of monthly transactions
 --Zelle API (send money capabilities)
---Form (turn input number to positive onSubmit before dB rewrite)
---Category (make drop-down list)
