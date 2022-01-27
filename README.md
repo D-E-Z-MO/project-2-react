@@ -9,3 +9,5 @@ _{Nav Bar}_
 
 --Pie chart displays the allocaton of monthly transactions
 --Zelle API (send money capabilities)
+--Form (turn input number to positive onSubmit before dB rewrite)
+--Category (make drop-down list)

@@ -12,7 +12,7 @@ export function Balance({ balance }) {
   // const total = amounts.reduce((acc,item)=>(acc += item.amount),0).toFixed(2)
   return (
     <div>
-      <h4>Your Balance</h4>
+      <h4>Your Current Balance</h4>
       <h1>${balance.toLocaleString()}</h1>
     </div>
   );

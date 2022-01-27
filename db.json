@@ -74,12 +74,228 @@
     },
     {
       "category": "Expense",
-      "amount": 10,
-      "date": 1643239511161,
+      "amount": 200,
+      "date": 1643252195102,
       "id": 13
+    },
+    {
+      "category": "Expense",
+      "amount": 200,
+      "date": 1643252247167,
+      "id": 14
+    },
+    {
+      "category": "Expense",
+      "amount": 200,
+      "date": 1643252259518,
+      "id": 15
+    },
+    {
+      "category": "Expense",
+      "amount": 400,
+      "date": 1643252280054,
+      "id": 16
+    },
+    {
+      "category": "Expense",
+      "amount": 250,
+      "date": 1643252513849,
+      "id": 17
+    },
+    {
+      "category": "Expense",
+      "amount": 250,
+      "date": 1643252527514,
+      "id": 18
+    },
+    {
+      "category": "Expense",
+      "amount": 230,
+      "date": 1643252571180,
+      "id": 19
+    },
+    {
+      "category": "Expense",
+      "amount": 250,
+      "date": 1643252590764,
+      "id": 20
+    },
+    {
+      "category": "Expense",
+      "amount": 300,
+      "date": 1643252899108,
+      "id": 21
+    },
+    {
+      "category": "Expense",
+      "amount": 400,
+      "date": 1643252916431,
+      "id": 22
+    },
+    {
+      "category": "Expense",
+      "amount": 300,
+      "date": 1643252927679,
+      "id": 23
+    },
+    {
+      "category": "Expense",
+      "amount": 375,
+      "date": 1643253466848,
+      "id": 24
+    },
+    {
+      "category": "Expense",
+      "amount": 30,
+      "date": 1643253499136,
+      "id": 25
+    },
+    {
+      "category": "Expense",
+      "amount": 35,
+      "date": 1643253520143,
+      "id": 26
+    },
+    {
+      "category": "Expense",
+      "amount": 45,
+      "date": 1643253530477,
+      "id": 27
+    },
+    {
+      "category": "Expesne",
+      "amount": 60,
+      "date": 1643253540386,
+      "id": 28
+    },
+    {
+      "category": "Income",
+      "amount": 500,
+      "date": 1643253588332,
+      "id": 29
+    },
+    {
+      "category": "Income",
+      "amount": 300,
+      "date": 1643253632479,
+      "id": 30
+    },
+    {
+      "category": "Expense",
+      "amount": 400,
+      "date": 1643254572112,
+      "id": 31
+    },
+    {
+      "category": "Income",
+      "amount": 400,
+      "date": 1643254711286,
+      "id": 32
+    },
+    {
+      "category": "Income",
+      "amount": 400,
+      "date": 1643254743639,
+      "id": 33
+    },
+    {
+      "category": "Income",
+      "amount": 400,
+      "date": 1643254779726,
+      "id": 34
+    },
+    {
+      "category": "Income",
+      "amount": 400,
+      "date": 1643254847197,
+      "id": 35
+    },
+    {
+      "category": "Income",
+      "amount": 400,
+      "date": 1643254869449,
+      "id": 36
+    },
+    {
+      "category": "Expense",
+      "amount": 200,
+      "date": 1643254880279,
+      "id": 37
+    },
+    {
+      "category": "Expense",
+      "amount": 100,
+      "date": 1643255057779,
+      "id": 38
+    },
+    {
+      "category": "Expense",
+      "amount": 200,
+      "date": 1643255076848,
+      "id": 39
+    },
+    {
+      "category": "Expense",
+      "amount": 300,
+      "date": 1643256052827,
+      "id": 40
+    },
+    {
+      "category": "Expense",
+      "amount": 100,
+      "date": 1643256080128,
+      "id": 41
+    },
+    {
+      "category": "Income",
+      "amount": 100,
+      "date": 1643256110007,
+      "id": 42
+    },
+    {
+      "category": "Expense",
+      "amount": 50,
+      "date": 1643256192674,
+      "id": 43
+    },
+    {
+      "category": "Expense",
+      "amount": -50,
+      "date": 1643256382507,
+      "id": 44
+    },
+    {
+      "category": "",
+      "amount": 0,
+      "date": 1643256585125,
+      "id": 45
+    },
+    {
+      "category": "Expense",
+      "amount": 500,
+      "date": 1643256749379,
+      "id": 46
+    },
+    {
+      "category": "Expense",
+      "amount": 500,
+      "date": 1643257079786,
+      "id": 47
+    },
+    {
+      "category": "",
+      "amount": 800,
+      "date": 1643257093786,
+      "id": 48
+    },
+    {
+      "category": "",
+      "amount": 800,
+      "date": 1643257135839,
+      "id": 49
     }
   ],
   "balance": {
-    "amount": 10
+    "amount": 800
   }
 }

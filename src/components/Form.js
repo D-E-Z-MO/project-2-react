@@ -1,31 +1,43 @@
 import React, { useState } from "react";
 import { createTransaction, updateBalance } from "../api";
 
-export function Form({ onUpdate }) {
+export function Form({ balance }) {
   const [category, setCategory] = useState("");
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState("");
   //onsubmit create function to post transaction & change value
   const onSubmit = () => {
     const data = {
       category,
-      amount: Number(amount),
+      amount: Math.abs(amount),
       date: new Date().getTime(),
     };
+    console.log("** First");
     createTransaction(data);
-    updateBalance(data.amount, data.category, onUpdate);
+    if (data.category === "Expense") {
+      const transaction = data.amount * -1;
+      const newBalance = balance + transaction;
+      return updateBalance(newBalance, data.category);
+    } else {
+      const transaction = data.amount;
+      const newBalance = balance + transaction;
+      return updateBalance(newBalance, data.category);
+    }
   };
+
   return (
     <>
       <h3>Add new transaction</h3>
       <form>
         <div className="form-control">
           <label htmlFor="text">Category</label>
-          <input
+          <select
             type="text"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            placeholder="Enter text..."
-          />
+          >
+            <option>Income</option>
+            <option>Expense</option>
+          </select>
         </div>
         <div className="form-control">
           <label htmlFor="amount">

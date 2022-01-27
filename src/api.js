@@ -27,7 +27,7 @@ export const updateBalance = (amount, category, onUpdate) =>
     body: JSON.stringify({ amount: amount }),
   })
     .then((res) => res.json())
-    .then((data) => onUpdate(data.amount));
+    .then((data) => onUpdate(data.amount, category));
 //
 // }
 // export const updateBalanceAndCreateTransaction = ()=>{

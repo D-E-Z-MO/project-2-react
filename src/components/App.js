@@ -10,15 +10,9 @@ import { Form } from "./Form";
 
 export function App() {
   const [balance, setBalance] = useState(0);
-  // const [updatedBalance, setUpdatedBalance] = useState(0);
-  const onUpdate = (amount, category) => {
-    console.log("here");
-    if (category === "Expense") {
-      return setBalance(balance - amount);
-    } else {
-      return setBalance(balance + amount);
-    }
-  };
+
+  console.log("**here");
+
   useEffect(() => {
     getBalance(setBalance);
   }, []);
@@ -30,15 +24,15 @@ export function App() {
       <Switch>
         <div className="container">
           <Route exact path="/transactionList">
-            <TransactionList balance={balance} onUpdate={onUpdate} />
+            <TransactionList balance={balance} />
           </Route>
 
           <Route exact path="/form">
-            <Form onUpdate={onUpdate} />
+            <Form balance={balance} />
           </Route>
 
           <Route exact path="/">
-            <Home balance={balance} onUpdate={onUpdate} />
+            <Home balance={balance} />
           </Route>
         </div>
       </Switch>
