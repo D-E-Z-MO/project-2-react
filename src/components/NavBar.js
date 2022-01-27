@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 export function NavBar() {
   const linkStyles = {
     display: "inline-block",
-    width: "90px",
+    width: "110px",
     padding: "12px",
     margin: "0 6px 6px",
     background: "blue",
     textDecoration: "none",
     color: "white",
-    textAlign: "autoComplete",
+    textAlign: "center",
   };
   return (
     <>
@@ -22,30 +22,16 @@ export function NavBar() {
       >
         Home
       </NavLink>
-      <NavLink
-        to="/balance"
-        exact
-        style={linkStyles}
-        activeStyle={{ background: "darkblue" }}
-      >
-        Balance
-      </NavLink>
-      <NavLink
-        to="/incomeExpenses"
-        exact
-        style={linkStyles}
-        activeStyle={{ background: "darkblue" }}
-      >
-        Summary
-      </NavLink>
+
       <NavLink
         to="/transactionList"
         exact
         style={linkStyles}
         activeStyle={{ background: "darkblue" }}
       >
-        Transactions
+        Summary
       </NavLink>
+
       <NavLink
         to="/form"
         exact

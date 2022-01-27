@@ -1,14 +1,10 @@
 import React from "react";
-import { Header } from "./Header";
 import { Balance } from "./Balance";
-import { IncomeExpenses } from "./IncomeExpenses";
-import { TransactionList } from "./TransactionList";
-import { Form } from "./Form";
 
-export function Home() {
+export function Home({ balance }) {
   return (
     <div>
-      <Header />
+      <Balance balance={balance} />
     </div>
   );
 }

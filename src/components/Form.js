@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { createTransaction } from "../api";
-export function Form() {
+import { createTransaction, updateBalance } from "../api";
+
+export function Form({ onUpdate }) {
   const [category, setCategory] = useState("");
   const [amount, setAmount] = useState(0);
-  //onsubmit create function to put request to add transaction & change value
+  //onsubmit create function to post transaction & change value
   const onSubmit = () => {
     const data = {
       category,
@@ -11,7 +12,7 @@ export function Form() {
       date: new Date().getTime(),
     };
     createTransaction(data);
-    // update balance
+    updateBalance(data.amount, data.category, onUpdate);
   };
   return (
     <>

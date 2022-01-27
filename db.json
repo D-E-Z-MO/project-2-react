@@ -29,9 +29,57 @@
       "amount": 450,
       "date": 1643174442319,
       "id": 5
+    },
+    {
+      "category": "Income",
+      "amount": 900,
+      "date": 1643214530344,
+      "id": 6
+    },
+    {
+      "category": "Income",
+      "amount": 250,
+      "date": 1643215834280,
+      "id": 7
+    },
+    {
+      "category": "Expense",
+      "amount": 100,
+      "date": 1643233293571,
+      "id": 8
+    },
+    {
+      "category": "Income",
+      "amount": 50,
+      "date": 1643233457622,
+      "id": 9
+    },
+    {
+      "category": "Expense",
+      "amount": 400,
+      "date": 1643239264349,
+      "id": 10
+    },
+    {
+      "category": "Income",
+      "amount": 400,
+      "date": 1643239312344,
+      "id": 11
+    },
+    {
+      "category": "Expense",
+      "amount": 200,
+      "date": 1643239490833,
+      "id": 12
+    },
+    {
+      "category": "Expense",
+      "amount": 10,
+      "date": 1643239511161,
+      "id": 13
     }
   ],
   "balance": {
-    "amount": 100000
+    "amount": 10
   }
 }

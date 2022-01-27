@@ -1,8 +1,0 @@
-# Nav Bar
-  --Home (show the home page, add new expenses(user set cats--only(line/pie)), overall balances, list of transactions)
-  --About (show the apps Name, creators, how to use)
-  --Spending Summary (shows transactions in visual chart, monthly transactions(spending total) 
-        ++ Jan Spending = Total Amt
-        ++ Comparison)
-  --Budget (allocaton of your expenses)
-  --Zelle (send money capabilities)

@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { IncomeExpenses } from "./IncomeExpenses";
 import { PieChart } from "react-minimal-pie-chart";
-import { getTransactions } from "../api";
+import { getTransactions, getBalance } from "../api";
+import { Balance } from "./Balance";
 
-export function TransactionList() {
+export function TransactionList({ balance }) {
   const [transactions, setTransactions] = useState([]);
+
   useEffect(() => {
     getTransactions().then((data) => setTransactions(data));
   }, []);
   return (
     <>
+      <Balance balance={balance} />
+
       {transactions.length && (
         <PieChart
           startAngle={45}
+          animate
+          animationDuration={1000}
           data={transactions.reduce(
             (result, transaction) => {
               if (transaction.category === "Expense") {
@@ -32,9 +38,7 @@ export function TransactionList() {
           )}
         />
       )}
-      <h3>
-        History &<span className="text-muted"> Balance: ${balance.amount}</span>
-      </h3>
+      <h3>History</h3>
       <ul className="list">
         {transactions.map((transaction) => {
           return (
@@ -43,9 +47,6 @@ export function TransactionList() {
             </li>
           );
         })}
-        {/* <li className="plus">
-          Cash <span>+$400</span>
-        </li> */}
       </ul>
     </>
   );

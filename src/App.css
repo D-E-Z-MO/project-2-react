@@ -109,6 +109,9 @@ input[type="number"] {
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
+  max-height: 400px;
+  width: 300px;
+  overflow: scroll;
 }
 
 .list li {
@@ -149,12 +152,7 @@ input[type="number"] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
-/* .linkStyles {
-  display: inline-block,
-  width: 50px,
-  padding: 12px,
-  margin: 0 6px 6px,
-  background: blue,
-  textDecoration: none,
-  color: white,
-} */
+.header {
+  display: flex;
+  margin-left: 50px;
+}
