@@ -32,6 +32,7 @@ export function Form({ balance }) {
           <label htmlFor="text">Category</label>
           <select
             type="text"
+            // style="margin:10px"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
@@ -42,7 +43,6 @@ export function Form({ balance }) {
         <div className="form-control">
           <label htmlFor="amount">
             Amount <br />
-            {/* {(negative - expense, positive - income)} */}
           </label>
           <input
             type="number"

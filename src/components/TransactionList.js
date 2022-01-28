@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IncomeExpenses } from "./IncomeExpenses";
 import { PieChart } from "react-minimal-pie-chart";
-import { getTransactions, getBalance } from "../api";
+import { getTransactions } from "../api";
 import { Balance } from "./Balance";
 
 export function TransactionList({ balance }) {
