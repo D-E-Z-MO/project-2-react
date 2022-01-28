@@ -259,12 +259,6 @@
       "id": 43
     },
     {
-      "category": "Expense",
-      "amount": -50,
-      "date": 1643256382507,
-      "id": 44
-    },
-    {
       "category": "",
       "amount": 0,
       "date": 1643256585125,
@@ -293,9 +287,51 @@
       "amount": 800,
       "date": 1643257135839,
       "id": 49
+    },
+    {
+      "category": "",
+      "amount": 200,
+      "date": 1643259026868,
+      "id": 50
+    },
+    {
+      "category": "Expense",
+      "amount": 300,
+      "date": 1643259038965,
+      "id": 51
+    },
+    {
+      "category": "",
+      "amount": 750.12,
+      "date": 1643299926464,
+      "id": 52
+    },
+    {
+      "category": "Expense",
+      "amount": 2.12,
+      "date": 1643299939233,
+      "id": 53
+    },
+    {
+      "category": "Expense",
+      "amount": 0.5,
+      "date": 1643306575958,
+      "id": 54
+    },
+    {
+      "category": "",
+      "amount": 0.53,
+      "date": 1643306594873,
+      "id": 55
+    },
+    {
+      "category": "Expense",
+      "amount": 67.5,
+      "date": 1643324784809,
+      "id": 56
     }
   ],
   "balance": {
-    "amount": 800
+    "amount": 1380.53
   }
 }

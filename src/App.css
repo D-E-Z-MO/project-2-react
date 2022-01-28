@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@font-face {
+  font-family: c39hrp24dhtt;
+  src: url("myserver.com/fonts/Delicious-Roman.ttf");
+}
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -21,7 +26,10 @@ body {
 
 .container {
   margin: 30px auto;
-  width: 350px;
+  width: 354px;
+  background-color: #dcecfa;
+  border: 1px solid black;
+  padding: 6px;
 }
 
 h1 {
@@ -100,17 +108,12 @@ input[type="number"] {
   width: 100%;
 }
 
-.btn:focus,
-.delete-btn:focus {
-  outline: 0;
-}
-
 .list {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 1px;
   max-height: 400px;
-  width: 300px;
+  width: 346px;
   overflow: scroll;
 }
 
@@ -118,41 +121,43 @@ input[type="number"] {
   background-color: #fff;
   box-shadow: var(--box-shadow);
   color: #333;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   position: relative;
-  padding: 10px;
+  padding: 5px;
   margin: 10px 0;
 }
 
-.list li.plus {
+/* .list li.plus {
   border-right: 5px solid #2ecc71;
 }
 
 .list li.minus {
   border-right: 5px solid #c0392b;
-}
+} */
 
-.delete-btn {
-  cursor: pointer;
-  background-color: #e74c3c;
-  border: 0;
-  color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.list li:hover .delete-btn {
+.list li:hover {
   opacity: 1;
 }
 .header {
   display: flex;
   margin-left: 50px;
+}
+.nav {
+  display: inline-block;
+  width: 110px;
+  padding: 12px;
+  margin: 0 6px 6px;
+  background: blue;
+  color: white;
+  text-align: center;
+}
+.nav-add {
+  display: inline-block;
+
+  padding: 12px;
+  margin: 0 6px 6px;
+  background: rgb(6, 223, 67);
+  color: white;
+  text-align: center;
 }

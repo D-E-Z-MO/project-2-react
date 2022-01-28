@@ -11,13 +11,12 @@ export function Form({ balance }) {
       amount: Math.abs(amount),
       date: new Date().getTime(),
     };
-    console.log("** First");
+
     createTransaction(data);
     let newBalance = null;
     if (data.category === "Expense") {
       const transaction = data.amount * -1;
       newBalance = balance + transaction;
-      // return updateBalance(newBalance, data.category);
     } else {
       const transaction = data.amount;
       newBalance = balance + transaction;
